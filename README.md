@@ -59,8 +59,17 @@ This research can read data in two ways:
    - This is useful if you keep collecting responses via Google Forms.
 
 2. Local file fallback
-   - Put your dataset here:
+   - For emergency case, we can put the extracted dataset here:
      `data/raw/dataset.xlsx`
+
+## Submit new responses (live Google Form)
+Use this form to submit new survey responses:
+- **[Submit A Response](https://docs.google.com/forms/d/e/1FAIpQLSfLaG5o6b8fFfa2zMnzqbZUI8FU99IbwT8Frsq2wbo-kVgOyA/viewform?usp=publish-editor)**
+
+Notes:
+- Always choose consent = YES.
+- New responses will update the linked Google Sheet, and then this pipeline can be re-run to refresh outputs.
+
 
 If live reading fails, it automatically falls back to the local Excel.
 
