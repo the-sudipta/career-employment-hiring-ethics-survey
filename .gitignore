@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# do not upload raw data
+data/raw/
+
+# outputs and trained model
+outputs/
+models/
+
+# Do not upload your google cloud API secrets
+secrets/
+*.json
