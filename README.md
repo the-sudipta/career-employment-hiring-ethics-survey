@@ -1,5 +1,6 @@
-# Career, Employment, and Hiring Ethics Survey (Checkpoint 3)
-
+<center>
+ <h1>Career, Employment, and Hiring Ethics Survey</h1> 
+</center>
 This repo contains a full pipeline for a survey-based study on:
 - career choice drivers
 - employment challenges after graduation
@@ -13,7 +14,7 @@ It reads the dataset, cleans it, then generates:
 - interactive 3D plot (HTML)
 - a metrics summary JSON
 
-## Project snapshot (Checkpoint 3)
+## Research snapshot
 - Raw rows: 23
 - Discarded (no consent): 1
 - Clean rows used: 22
@@ -24,7 +25,7 @@ Key stats from `outputs/metrics/metrics.json`:
 
 ## Why this study exists (research gap)
 Many works study employability or hiring ethics separately.
-This project builds one combined dataset that captures:
+This research builds one combined dataset that captures:
 - career choice decision drivers
 - graduate job market barriers
 - perceived ethical issues in recruitment
@@ -54,7 +55,7 @@ If your repo root is `RESEARCH/`, it looks like this:
       README.md
 
 ## Dataset sources
-This project can read data in two ways:
+This research can read data in two ways:
 
 1. Live Google Sheet (default)
    - It uses public CSV export URLs inside `src/config.py`.
@@ -98,12 +99,12 @@ pip install -r requirements.txt
     python scripts/print_columns.py
 
 ## Run (one command)
-From the project root:
+From the research root:
 ```cmd
 python -m src.run
 ```
 
-Default behavior in Checkpoint 3:
+Default behavior :
 - runs all targets and all models
 - generates plots
 - generates 3D plot (PNG + HTML)
@@ -159,7 +160,7 @@ python -m src.run --no-show
 ### Figures (paper-ready PNG + interactive HTML)
 All figures are saved in `outputs/figures/`.
 
-Main figures (Checkpoint 3):
+Main figures :
 - `outputs/figures/dashboard_summary.png`
 - `outputs/figures/ordinal_spearman_heatmap.png`
 - `outputs/figures/3d_scatter_readiness_fairness_stress.png`
@@ -171,27 +172,27 @@ Main figures (Checkpoint 3):
 
 ## Figures preview (from outputs/)
 
-Dashboard summary:
+- ### Dashboard summary:
 
 ![Dashboard](outputs/figures/dashboard_summary.png)
 
-Ordinal Spearman heatmap:
+- ### Ordinal Spearman heatmap:
 
 ![Spearman Heatmap](outputs/figures/ordinal_spearman_heatmap.png)
 
-3D scatter (static image):
+- ### 3D scatter (static image):
 
 ![3D Scatter](outputs/figures/3d_scatter_readiness_fairness_stress.png)
 
-3D scatter (interactive):
+- ### 3D scatter (interactive):
 - Open this file in a browser:
   `outputs/figures/3d_scatter_readiness_fairness_stress.html`
 
-Internship vs employment:
+- ### Internship vs employment:
 
 ![Internship vs Employment](outputs/figures/internship_vs_employment.png)
 
-Problem vs employment heatmap:
+- ### Problem vs employment heatmap:
 
 ![Problem vs Employment](outputs/figures/heatmap_problem_vs_employment.png)
 
@@ -200,45 +201,12 @@ This deletes everything inside `outputs/`:
 
     clear_outputs.bat
 
-## Important GitHub note (so images show in README)
-If your `.gitignore` currently ignores `outputs/` fully, GitHub will not show images in this README.
-
-Recommended `.gitignore` change.
-
-Replace this:
-
-    outputs/
-    models/
-
-With this:
-
-    # keep most outputs ignored
-    outputs/*
-    models/*
-
-    # but keep paper artifacts
-    !outputs/figures/
-    !outputs/figures/*.png
-    !outputs/figures/*.html
-    !outputs/tables/
-    !outputs/tables/*.csv
-    !outputs/metrics/
-    !outputs/metrics/*.json
-    !outputs/metrics/*.csv
 
 Also we did not commit:
 - `.venv/`
 - `.idea/`
 
-## Suggested next steps (to strengthen the paper)
-- Increase sample size (more form responses)
-- Re-run pipeline and compare changes in:
-  - ethics distributions
-  - internship vs employment association
-  - correlations among ordinal variables
-- Only claim ML model performance after dataset is large enough.
-  Small data causes unstable CV and holdout splits.
 
 ## Author
-Sudipta Kumar Das  
-Email: dip.kumar020@gmail.com
+### Sudipta Kumar Das  
+Email: `sudipta.kumar400@gmail.com`
