@@ -15,9 +15,6 @@ It reads the dataset, cleans it, then generates:
 - a metrics summary JSON
 
 ## Research snapshot
-- Raw rows: 23
-- Discarded (no consent): 1
-- Clean rows used: 22
 
 Key stats from `outputs/metrics/metrics.json`:
 - Chi-square (internship vs employment): chi2 = 15.5709, p = 0.04895, dof = 8
