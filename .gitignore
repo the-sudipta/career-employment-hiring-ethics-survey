@@ -6,8 +6,8 @@ __pycache__/
 data/raw/
 
 # outputs and trained model
-outputs/
-models/
+#outputs/
+#models/
 
 # Do not upload your google cloud API secrets
 secrets/

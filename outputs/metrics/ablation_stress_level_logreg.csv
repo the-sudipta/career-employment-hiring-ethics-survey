@@ -1,0 +1,11 @@
+step,n_features_raw,folds,acc_mean,acc_std,f1_macro_mean,f1_macro_std,rows_used,skipped_folds,note
+Add_demographics,4,3,0.2738095238095238,0.1178511301977579,0.16666666666666666,0.09001028747788693,22,0.0,
+Add_career_choice,8,3,0.32142857142857145,0.07715167498104594,0.20925925925925926,0.06973396438430642,22,0.0,
+Add_preparation,13,3,,,,,22,,CV produced 0 valid folds (skipped=3). Dataset too small / imbalance.
+Add_employment_problems,15,3,,,,,22,,CV produced 0 valid folds (skipped=3). Dataset too small / imbalance.
+Add_ethics,18,3,,,,,22,,CV produced 0 valid folds (skipped=3). Dataset too small / imbalance.
+Only_demographics,4,3,0.2738095238095238,0.1178511301977579,0.16666666666666666,0.09001028747788693,22,0.0,
+Only_career_choice,4,3,0.18452380952380953,0.07192289269996768,0.1017857142857143,0.032829957697946846,22,0.0,
+Only_preparation,5,3,,,,,22,,CV produced 0 valid folds (skipped=3). Dataset too small / imbalance.
+Only_employment_problems,2,3,0.5,0.05832118435198042,0.41150793650793654,0.046862374422966716,22,0.0,
+Only_ethics,3,3,,,,,22,,CV produced 0 valid folds (skipped=3). Dataset too small / imbalance.
